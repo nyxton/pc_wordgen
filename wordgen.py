@@ -14,11 +14,7 @@ def makeWord(syllables):
     word = ""
     s = 0
     while s < syllables:
-        if(s == 0):
-            word += random.choice(consanants).capitalize()
-        else:
-            word += random.choice(consanants)
-
+        word += random.choice(consanants)
         word += random.choice(vowels)
         if random.randint(0, 3) == 0:
             word += random.choice(vowels)
